@@ -8,14 +8,20 @@ import subprocess
 import shlex
 #end if
 
-x1,y1,x2,y2,x3,y3=[int(x) for x in input("Enter the triangle coordinates : example 1 0 6 0 4 3 :").split()]
+#x1,y1,x2,y2,x3,y3=[int(x) for x in input("Enter the triangle coordinates : example 1 0 6 0 4 3 :").split()]
+
 
 #Triangle vertices
-A = np.array([x1,y1]) 
-B = np.array([x2,y2]) 
-C = np.array([x3,y3])
+#A = np.array([x1,y1]) 
+#B = np.array([x2,y2]) 
+#C = np.array([x3,y3])
 
-M = np.array([[1,x1,y1], [1, x2, y2], [1,x3,y3]]) 
+A=np.array([[1],[0]])
+B=np.array([[6],[0]])
+C=np.array([[4],[3]])
+
+#M = np.array([[1,x1,y1], [1, x2, y2], [1,x3,y3]])
+M = np.vstack((np.ones(3),np.hstack((A,B,C)))) 
 area = 1/2*np.abs(np.linalg.det(M))
 print("Area of the triangle = ", area, "sq.units" )
 
