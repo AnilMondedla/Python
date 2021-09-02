@@ -168,15 +168,17 @@ The direction vectors of $AB$,$BC$ and $CA$ are\\
 \end{align}
 
 \begin{align}
-     \norm{\vec{AB}}=\sqrt{\Bigl(1\Bigr)^{\! 2} + \Bigl(6\Bigr)^{\! 2}}\\
-      =\sqrt{37}
-\end{align}
-\begin{align}
-      \norm{\vec{BC}}=\sqrt{\Bigl(1\Bigr)^{\! 2} + \Bigl(-6\Bigr)^{\! 2}}\\
-      =\sqrt{37}\\
-      \norm{\vec{CA}}=\sqrt{\Bigl(-2\Bigr)^{\! 2}}\\
-      =2
-\end{align}   
+     {\norm{\vec{B-A}}}^2={(\vec{B}-\vec{A})}^T  (\vec{B}-\vec{A})\\
+      =\myvec{1 & 6}\myvec{1\\6}\\
+      =37\\
+      {\norm{\vec{C-B}}}^2={(\vec{C}-\vec{B})}^T  (\vec{C}-\vec{B})\\
+      =\myvec{1 & -6}\myvec{1\\-6}\\
+      =37\\
+      {\norm{\vec{A-C}}}^2={(\vec{A}-\vec{C})}^T  (\vec{A}-\vec{C})\\
+      =\myvec{-2 & 0}\myvec{-2\\0}\\
+      =4
+     \end{align}
+   
       Sides AB and BC are equal. Hence the given points are the vertices of isosceles triangle.
 
 
