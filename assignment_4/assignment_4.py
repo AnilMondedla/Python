@@ -22,6 +22,7 @@ def MyFun(p,q):
     plt.plot(p,q,marker='o')
     plt.plot(0,2,marker='o')
     plt.plot(2,0,marker='o')
+    plt.plot(4,0,marker='o')
     plt.plot(np.sqrt(2),4*np.sqrt(2),marker='o')
     plt.plot(1,1,marker='o')
     plt.show()
