@@ -173,16 +173,22 @@ Find the distance between the following pairs of points
 \item The distance between two vectors is given by 
 \begin{align}
 \norm{\vec{A}-\vec{B}}
-\label{eq1}
+\label{eq5}
 \end{align}
-From \eqref{eq1},
-\begin{enumerate}
-$\norm{\myvec{2\\3}-\myvec{5\\7}} &=5.0$
+From \eqref{eq5}
+\begin{align}
+\norm{\vec{A}-\vec{B}}&= \sqrt{\myvec{\vec{A}-\vec{B}}^\intercal\myvec{\vec{A}-\vec{B}}}\\
+&=\norm{\myvec{2\\3}-\myvec{5\\7}} \\
+&=\norm{\myvec{-3\\-4}} \\
+&=\sqrt{\myvec{-3 & -4}\myvec{-3\\-4}} \\
+&=\sqrt{\myvec{9+16}}  \nonumber \\
+&=5 \nonumber  
+\end{align}
+\\
 \begin{figure}[!ht]
 \includegraphics[width=\columnwidth]{Figure_5.png}
 \caption{}
 \label{fig:Line between A and B}
 \end{figure}
-\end{enumerate}
 \end{enumerate}
 \end{document}
