@@ -163,70 +163,48 @@ https://github.com/AnilMondedla/Python/Assignment_6
 Prove that the points (2,-2),(8,4),(5,7), and (-1,1) are at the angular points of a rectangle. 
 \end{enumerate}
 \subsection{Solution}
- a quadrilateral to be a rectangle, the opposite sides of the quadrilateral must be equal and the diagonals must be equal as well.
 \begin{align}
 \vec{A} = \myvec{2\\-2 },
 \vec{B} = \myvec{8\\4 },
 \vec{C} = \myvec{5\\7},
 \vec{D} = \myvec{-1\\1}
 \end{align}
+Direction vector of A and B 
 \begin{align}
-\norm{\vec{A}-\vec{B}}&= \sqrt{\myvec{\vec{A}-\vec{B}}^\intercal\myvec{\vec{A}-\vec{B}}}\\
-&=\sqrt{\myvec{\myvec{2\\-2}-\myvec{8\\4}}^\intercal\myvec{\myvec{2\\-2}-\myvec{8\\4}}}\\
-&=\sqrt{\myvec{-6\\-6}^\intercal\myvec{-6\\-6}} \\
-&=\sqrt{\myvec{-6 & -6}\myvec{-6\\-6}} \\
-&=\sqrt{\myvec{36+36}}  \nonumber \\
-&= \sqrt{\myvec{72}}\nonumber 
+m1= \myvec{2\\-2 }-\myvec{8\\4 } = \myvec{-6\\-6 }
 \end{align}
+Direction vector of B and C 
 \begin{align}
-\norm{\vec{C}-\vec{D}}&= \sqrt{\myvec{\vec{C}-\vec{D}}^\intercal\myvec{\vec{C}-\vec{D}}}\\
-&=\sqrt{\myvec{\myvec{5\\7}-\myvec{-1\\1}}^\intercal\myvec{\myvec{5\\7}-\myvec{-1\\1}}}\\
-&=\sqrt{\myvec{6\\6}^\intercal\myvec{6\\6}} \\
-&=\sqrt{\myvec{6 & 6}\myvec{6\\6}} \\
-&=\sqrt{\myvec{36+36}}  \nonumber \\
-&= \sqrt{\myvec{72}}\nonumber 
+m2= \myvec{8\\4 }-\myvec{5\\7 } = \myvec{3\\-3 }
 \end{align}
-\\
-AB=CD\\
+Direction vector of C and D 
 \begin{align}
-\norm{\vec{A}-\vec{C}}&= \sqrt{\myvec{\vec{A}-\vec{C}}^\intercal\myvec{\vec{A}-\vec{C}}}\\
-&=\sqrt{\myvec{\myvec{2\\-2}-\myvec{5\\7}}^\intercal\myvec{\myvec{2\\-2}-\myvec{5\\7}}}\\
-&=\sqrt{\myvec{-3\\-9}^\intercal\myvec{-3\\-9}} \\
-&=\sqrt{\myvec{-3 & -9}\myvec{-3\\-9}} \\
-&=\sqrt{\myvec{9+81}}  \nonumber \\
-&= \sqrt{\myvec{90}}\nonumber 
+m3= \myvec{5\\7 }-\myvec{-1\\1 } = \myvec{6\\6 }
 \end{align}
-\\
+Direction vector of D and A 
 \begin{align}
-\norm{\vec{B}-\vec{D}}&= \sqrt{\myvec{\vec{B}-\vec{D}}^\intercal\myvec{\vec{B}-\vec{D}}}\\
-&=\sqrt{\myvec{\myvec{8\\4}-\myvec{-1\\1}}^\intercal\myvec{\myvec{8\\4}-\myvec{-1\\1}}}\\
-&=\sqrt{\myvec{9\\3}^\intercal\myvec{9\\3}} \\
-&=\sqrt{\myvec{9 & 3}\myvec{9\\3}} \\
-&=\sqrt{\myvec{81+9}}  \nonumber \\
-&= \sqrt{\myvec{90}}\nonumber 
+m4= \myvec{-1\\1 }-\myvec{2\\-2 } = \myvec{-3\\3 }
 \end{align}
-\\
-AC=BD\\
+Here,\\
 \begin{align}
-\norm{\vec{A}-\vec{D}}&= \sqrt{\myvec{\vec{A}-\vec{D}}^\intercal\myvec{\vec{A}-\vec{D}}}\\
-&=\sqrt{\myvec{\myvec{2\\-2}-\myvec{-1\\1}}^\intercal\myvec{\myvec{2\\-2}-\myvec{-1\\1}}}\\
-&=\sqrt{\myvec{3\\-3}^\intercal\myvec{3\\-3}} \\
-&=\sqrt{\myvec{3 & -3}\myvec{3\\-3}} \\
-&=\sqrt{\myvec{9+9}}  \nonumber \\
-&= \sqrt{\myvec{18}}\nonumber 
+     \text{These direction vectors are parallel}\nonumber\\
+     m1=k.m3 \\
+    \text{These direction vectors are parallel}\nonumber\\
+    m2=k.m4
 \end{align}
-\\
+For a rectangle \\
 \begin{align}
-\norm{\vec{B}-\vec{C}}&= \sqrt{\myvec{\vec{B}-\vec{C}}^\intercal\myvec{\vec{B}-\vec{C}}}\\
-&=\sqrt{\myvec{\myvec{8\\4}-\myvec{5\\7}}^\intercal\myvec{\myvec{8\\4}-\myvec{5\\7}}}\\
-&=\sqrt{\myvec{3\\-3}^\intercal\myvec{3\\-3}} \\
-&=\sqrt{\myvec{3 & -3}\myvec{3\\-3}} \\
-&=\sqrt{\myvec{9+9}}  \nonumber \\
-&= \sqrt{\myvec{18}}\nonumber 
+    \myvec{m1}^\intercal\myvec{m2}=0\\
+    \myvec{-6\\-6}^\intercal\myvec{3\\-3}=0\\
+    \myvec{-6&-6}\myvec{3\\-3}=0\\
+    -18+18=0 \nonumber \\
+    0=0 \nonumber
 \end{align}
-\\
-AD=BC\\
-Therefore, point A, B, C and D are the angular points of a rectangle. 
+Hence, given points A,B,C and D are the Vector points of a rectangle.
+
+
+
+
 \begin{figure}[!ht]
 \includegraphics[width=\columnwidth]{Figure_6.png}
 \caption{}
